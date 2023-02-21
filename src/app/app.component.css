@@ -1,0 +1,39 @@
+.red{
+    color: red;
+    background-color: pink;
+}
+.green{
+    color: green;
+    background-color: lightgreen;
+}
+button:disabled{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+.active{
+    font-weight: 900;
+    color: blue;
+}
+.disabled{
+    color: gray;
+
+}
+:host .flex-container{
+    display: flex;
+    flex-direction: row;
+}
+:host li{
+    list-style-type: none;   
+}
+:host .button {
+    display: inline-block;
+    /* width: 115px;
+    height: 25px; */
+    background: #4E9CAF;
+    text-align: center;
+    border-radius: 1px;
+    color: white;
+    /* font-weight: bold;
+    line-height: 25px; */
+}
