@@ -37,3 +37,7 @@ button:disabled{
     /* font-weight: bold;
     line-height: 25px; */
 }
+img{
+    height: 100px;
+    width: 100px;
+}
