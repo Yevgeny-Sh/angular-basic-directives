@@ -1,4 +1,4 @@
-import { Directive,ElementRef } from '@angular/core';
+import { Directive,ElementRef ,Input} from '@angular/core';
 
 @Directive({
   selector: '[appMyCustomDirective]'
@@ -6,7 +6,10 @@ import { Directive,ElementRef } from '@angular/core';
 export class MyCustomDirectiveDirective {
 
   constructor(private element:ElementRef) {
-    this.element.nativeElement.style.backgroundColor = 'yellow';
+   
+  }
+  @Input('appMyCustomDirective') set backgroundColor(color: string) {
+    this.element.nativeElement.style.backgroundColor = color;
   }
 
 }

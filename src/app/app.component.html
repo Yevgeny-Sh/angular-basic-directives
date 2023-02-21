@@ -12,6 +12,7 @@
     
   >
     <button [disabled]="currentPage > 2 ? true : null"  (click)="currentPage=currentPage+1">Next</button>
+
   </li>
   </ul>
 </nav>
@@ -21,7 +22,7 @@
   <img [src]="images[currentPage].url" />
 </div>
 
-<div appMyCustomDirective [ngSwitch]="currentPage">
+<div   [appMyCustomDirective]="'red'" [ngSwitch]="currentPage">
   <div *ngSwitchCase="0">
     Current Page is one
   </div>

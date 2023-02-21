@@ -8,7 +8,7 @@
 }
 button:disabled{
   border: 1px solid #999999;
-  background-color: #cccccc;
+  background-color: #999999;
   color: #666666;
 }
 .active{
@@ -26,17 +26,7 @@ button:disabled{
 :host li{
     list-style-type: none;   
 }
-:host .button {
-    display: inline-block;
-    /* width: 115px;
-    height: 25px; */
-    background: #4E9CAF;
-    text-align: center;
-    border-radius: 1px;
-    color: white;
-    /* font-weight: bold;
-    line-height: 25px; */
-}
+
 img{
     height: 100px;
     width: 100px;
